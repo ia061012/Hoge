@@ -13,7 +13,7 @@ dependencies:
 
 test:
   override:
-    - echo "Nothing to do here"
+      - ./gradlew connectedAndroidTest
 
 deployment:
   master:
