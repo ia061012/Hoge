@@ -5,6 +5,6 @@ package com.example.wataru.hoge;
  */
 public class Piyo {
     public String getHelloString() {
-        return "PelloWorld!!";
+        return "HelloWorld!!";
     }
 }
