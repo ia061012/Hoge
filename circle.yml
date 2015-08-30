@@ -12,8 +12,13 @@ dependencies:
     - echo y | android update sdk --no-ui --all --filter android-22,build-tools-22.0.1
 
 test:
+  pre:
+    - emulator -avd circleci-android22 -no-audio -no-window:
+        background: true
+        parallel: true
+    - circle-android wait-for-boot
   override:
-      - ./gradlew connectedAndroidTest
+    - ./gradlew connectedAndroidTest -PdisablePreDex
 
 deployment:
   master:
