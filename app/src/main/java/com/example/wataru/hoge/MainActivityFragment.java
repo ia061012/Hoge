@@ -29,7 +29,7 @@ public class MainActivityFragment extends Fragment {
         TextView my_text = (TextView)getActivity().findViewById(R.id.my_text);
 
         Piyo _piyo = new Piyo();
-        String _greed = _piyo.getHelloString();
+        String _greed = _piyo.getString();
 
         my_text.setText(_greed);
 

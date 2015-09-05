@@ -12,8 +12,8 @@ public class PiyoTest {
     public void testGetHelloString() throws Exception {
 
         Piyo sut = new Piyo();
-        String expected = "HelloWorld!!";
-        String actual = sut.getHelloString();
+        String expected = "HogeWorld!!";
+        String actual = sut.getString();
 
         assertThat(actual, is(expected));
 
