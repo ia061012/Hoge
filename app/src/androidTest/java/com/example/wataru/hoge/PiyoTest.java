@@ -12,7 +12,7 @@ public class PiyoTest {
     public void testGetHelloString() throws Exception {
 
         Piyo sut = new Piyo();
-        String expected = "HogeWorld!!";
+        String expected = "FugaWorld!!";
         String actual = sut.getString();
 
         assertThat(actual, is(expected));
